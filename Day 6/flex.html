@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            /* height: 400px; */
+            border: 3px solid black;
+            display: flex;
+            flex-wrap: wrap;
+            /* justify-content: baseline; */
+            /* justify-content: center; */
+            /* justify-content: end; */
+            /* justify-content: space-around; */
+            /* justify-content:space-between; */
+            justify-content: space-evenly;
+            align-items: center;
+            align-items: baseline;
+            /* align-items: end; */
+        }
+        #parent div{
+            height: 100px;
+            width: 100px;
+        }
+        #c1{
+            background-color: brown;
+        }
+        #c2{
+            background-color: blue;
+        }
+        #c3{
+            background-color: chartreuse;
+        }
+        #c4{
+            background-color:orangered;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="c1"></div>
+        <div id="c2"></div>
+        <div id="c3"></div>
+        <div id="c4"></div>
+    </div>
+</body>
+</html>

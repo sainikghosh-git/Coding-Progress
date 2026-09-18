@@ -1,0 +1,51 @@
+#nav{
+    height: 80px;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    background-color: black;
+    z-index: 10;
+}
+h3{
+    display: inline-block;
+    color: aliceblue;
+    margin: 10px;
+}
+h1{
+    color: aliceblue;
+    display: inline-block;
+    margin: 10px;
+}
+#box{
+    height: 600px;
+    width: 450px;
+    background-color: beige;
+    position: relative;
+    top: 40px;
+    border-radius: 5%;
+    overflow:hidden
+
+}
+button{
+    height: 40px;
+    width: 80px;
+    background-color: rgb(42, 95, 165);
+    color: aliceblue;
+}
+#red{
+    height: 40px;
+    width: 100px;
+    background-color: red;
+    color: aliceblue;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 550px;
+    left: 40px;
+    font-size: 15px;
+    
+
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
