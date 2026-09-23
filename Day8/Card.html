@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            perspective: 900px;
+        }
+        #main{
+            height: 500px;
+            width: 400px;
+            /* border: 2px solid; */
+            position: relative;
+            margin: auto;
+            margin-top: 51px;
+            transition: 3s;
+            transform-style: preserve-3d;
+        }
+        #main:hover{
+            transform: rotateY(180deg);
+        }
+        #one{
+            height: 50%;
+            width: 100%;
+            background-color: greenyellow;
+            position: absolute;
+            z-index: 1;
+            backface-visibility: hidden;
+            
+        }
+        #two{
+            height: 50%;
+            width: 100%;
+            background-color: peru;
+            position: absolute;
+             transform: rotateY(180deg);
+           
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="one"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlDY2oMDZkx-pK5WrLXVfyjXEZZ9f2Krs52ZdadF2fbg&s=10" height="100%" width="100%"></div>
+        <div id="two"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5divaqliPvKy02IF7X9YQMG52R7G3EzKld9m7d0YHoQ&s=10" height="100%" width="100%"></div>
+    </div>
+</body>
+</html>

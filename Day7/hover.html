@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+       #main{
+        width: 100vw;
+        border: 3px solid;
+
+       }
+       .one{
+        height: 100px;
+        width: 100px;
+        transition-duration: 5s;
+       
+        
+       }
+       #first{
+        background-color: pink;
+        transition-timing-function: linear;
+       }
+       #second{
+        background-color: green;
+        transition-timing-function: ease-in-out;
+       }
+       #third{
+        background-color: red;
+        transition-timing-function: step-start;
+       }
+       #fourth{
+        background-color: blueviolet;
+        transition-timing-function: step-end;
+       }
+       #fifth{
+        background-color: black;
+        transition-timing-function: ease;
+       }
+       #main:hover .one{
+        margin-left:1601px;
+        border-radius: 30%;
+       }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="first" class="one"></div>
+        <div id="second" class="one"></div>
+        <div id="third" class="one"></div>
+        <div id="fourth" class="one"></div>
+        <div id="fifth" class="one"></div>
+    </div>
+</body>
+</html>
