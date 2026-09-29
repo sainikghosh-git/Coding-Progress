@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.row {
+display: flex;
+align-items: flex-start; /* all items at the top */
+height: 150px;
+border: 3px solid black;
+}
+.item { padding: 15px; color: white; }
+.a { background: navy; flex-grow: 1; } /* 1 share of free space */
+.b { background: maroon; flex-grow: 2; } /* 2 shares: grows double */
+.c { background: green; order: -1; } /* moves to the front */
+.d { background: purple; align-self: flex-end; } /* only this one at bottom */
+</style>
+</head>
+<body>
+<div class="row">
+<div class="item a">A</div>
+<div class="item b">B</div>
+<div class="item c">C</div>
+<div class="item d">D</div>
+</div>
+</body>
+</html>

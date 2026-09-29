@@ -1,0 +1,56 @@
+<form action="/register" method="POST" enctype="multipart/form-data">
+<!-- Text inputs -->
+<label for="name">Full Name:</label>
+<input type="text" id="name" name="fullname" placeholder="Enter your name" required>
+<br><br>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required>
+<br><br>
+<label for="pass">Password:</label>
+<input type="password" id="pass" name="password" minlength="6">
+<br><br>
+<label for="age">Age:</label>
+<input type="number" id="age" name="age" min="16" max="60">
+<br><br>
+<label for="dob">Date of Birth:</label>
+<input type="date" id="dob" name="dob">
+<br><br>
+<!-- Radio: same name = only one can be selected -->
+<p>Mode of class:</p>
+<input type="radio" id="online" name="mode" value="online">
+<label for="online">Online</label>
+<input type="radio" id="offline" name="mode" value="offline" checked>
+<label for="offline">Offline</label>
+<br><br>
+<!-- Checkbox: many can be selected -->
+<p>Skills:</p>
+<input type="checkbox" id="html" name="skills" value="html">
+<label for="html">HTML</label>
+<input type="checkbox" id="css" name="skills" value="css">
+<label for="css">CSS</label>
+<input type="checkbox" id="js" name="skills" value="js">
+<label for="js">JavaScript</label>
+<br><br>
+<!-- Dropdown -->
+<label for="city">City:</label>
+<select id="city" name="city">
+<option value="">-- Select --</option>
+<option value="delhi">Delhi</option>
+<option value="mumbai">Mumbai</option>
+<option value="bengaluru">Bengaluru</option>
+</select>
+<br><br>
+<!-- Multi-line text -->
+<label for="about">About you:</label><br>
+<textarea id="about" name="about" rows="4" cols="40"></textarea>
+<br><br>
+<!-- File upload -->
+<label for="photo">Photo:</label>
+<input type="file" id="photo" name="photo" accept="image/*">
+<br><br>
+<!-- Buttons -->
+<button type="submit">Register</button>
+<button type="reset">Clear</button>
+</form>
+</body>
+</html>

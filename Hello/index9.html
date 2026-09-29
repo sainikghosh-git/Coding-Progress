@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<head>
+<title>Tables</title>
+<style>
+td,table,th {
+border: 1px solid black;
+border-collapse: collapse; /* joins double borders into one line */
+}
+th, td {
+padding: 8px;
+}
+</style>
+</head>
+<body>
+<table cellpadding="8">
+<caption>Weekly Timetable</caption>
+<thead>
+<tr>
+<th>Day</th>
+<th>10:00 - 11:00</th>
+<th>11:00 - 12:00</th>
+<th>12:00 - 01:00</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Monday</td>
+<td>HTML</td>
+<td>CSS</td>
+<td rowspan="2">Lunch</td> <!-- covers Monday and Tuesday -->
+</tr>
+<tr>
+<td>Tuesday</td>
+<td colspan="2">JavaScript Lab</td> <!-- covers 2 time slots -->
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td colspan="4">Lab sessions run for two continuous periods.</td>
+</tr>
+</tfoot>
+</table>
+</body>
+</html>
+</body>
+</html>
