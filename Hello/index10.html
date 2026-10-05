@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .profile-card {
+width: 300px;
+padding: 25px;
+border: 2px solid black;
+border-radius: 15px;
+text-align: center;
+position: relative;
+}
+status {
+position: absolute;
+top: 10px;
+right: 10px;
+padding: 5px 10px;
+background: green;
+color: white;
+border-radius: 15px;
+}
+.profile-image {
+width: 100px;
+height: 100px;
+margin: auto;
+border-radius: 50%;
+overflow: hidden;
+}
+.profile-image img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+#one{
+    display: flex;
+}
+.skills span {
+
+padding: 5px 10px;
+margin: 5px;
+border: 1px solid black;
+border-radius: 15px;
+justify-content: space-evenly;
+}
+.profile-card button {
+padding: 10px 20px;
+margin-top: 15px;
+border: none;
+border-radius: 8px;
+background: black;
+color: white;
+justify-content: space-evenly;
+}
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+<span class="status">Available</span>
+<div class="profile-image">
+<img src="profile.jpg" alt="Profile">
+</div>
+<h2>Mitali Pawar</h2>
+<p class="role">Frontend Developer</p>
+<p>
+I create responsive websites using HTML, CSS and JavaScript.
+</p>
+<div id="one" class="skills">
+<span>HTML</span>
+<span>CSS</span>
+<span>JS</span>
+</div>
+<button>View Profile</button>
+</div>
+</body>
+</html>
