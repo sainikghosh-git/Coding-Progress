@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+        }
+
+        h1 {
+            text-align: start;
+            font-size: 50px;
+            color: #fff;
+            margin-left: 30px;
+        }
+
+        p {
+            text-align: start;
+            font-size: 20px;
+            color: #fff;
+            margin-left: 30px;
+        }
+
+        .main {
+            height: 80vh;
+
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            gap: 10px;
+            border-radius: 5px;
+            padding: 10px;
+
+        }
+
+        .int {
+            border: 1px solid white;
+            border-radius: 20px;
+            overflow: hidden;
+
+            position: relative;
+            cursor: pointer;
+
+
+        }
+
+        .int img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            transition: 2s;
+
+
+
+        }
+
+        .int:hover img {
+            transform: scale(1.1);
+
+
+
+
+        }
+
+        .one {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        h3 {
+            color: #fff;
+            z-index: 1;
+        }
+
+        .text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(16, 2, 2, 0.5);
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+
+        .int:hover .text {
+            opacity: 1;
+
+        }
+
+        .aa {
+            font-size: 30px;
+        }
+
+        .int:hover h3 {
+            transform: translateY(-10px);
+            transition: 0.5s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="body">
+        <h1>MOMENTS</h1>
+        <p>A collection of places, people and memories</p>
+    </div>
+    <div class="main">
+        <div class="int one"><img
+                src="https://images.unsplash.com/photo-1791313779146-f1b991068700?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8">
+            <div class="text aa">
+                <h3>Mountains</h3>
+            </div>
+        </div>
+        <div class="int "><img
+                src="https://images.unsplash.com/photo-1791352616735-8f3d5c0aefdd?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3fHx8ZW58MHx8fHx8">
+            <div class="text aa">
+                <h3>Beach</h3>
+            </div>
+        </div>
+        <div class="int "><img
+                src="https://images.unsplash.com/photo-1790789655397-1bb011fa75e7?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxM3x8fGVufDB8fHx8fA%3D%3D">
+            <div class="text aa">
+                <h3>Forest</h3>
+            </div>
+        </div>
+        <div class="int "><img
+                src="https://images.unsplash.com/photo-1790700553443-1b00de9f47dc?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyOHx8fGVufDB8fHx8fA%3D%3D">
+            <div class="text aa">
+                <h3>City</h3>
+            </div>
+        </div>
+        <div class="int "><img
+                src="https://images.unsplash.com/photo-1791152933480-aa6e16d4786e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzN3x8fGVufDB8fHx8fA%3D%3D">
+            <div class="text aa">
+                <h3>Desert</h3>
+            </div>
+        </div>
+        <div class="int "><img
+                src="https://images.unsplash.com/photo-1791133052453-aaa8d29a2840?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0M3x8fGVufDB8fHx8fA%3D%3D">
+            <div class="text aa">
+                <h3>Waterfall</h3>
+            </div>
+        </div>
+        <div class="int "><img
+                src="https://plus.unsplash.com/premium_photo-1764231387181-4fc46e84483a?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMj3fDB8MHxmZW0dXJlZ1waG9Ob3MtZmVlZHw0NXx8fGVufD8fHx8fA%3D%3D">
+            <div class="text aa">
+                <h3>Mountain Lake</h3>
+            </div>
+        </div>
+        <div class="int "><img
+                src="https://images.unsplash.com/photo-1791313779146-f1b991068700?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8">
+            <div class="text aa">
+                <h3>Sunset</h3>
+            </div>
+        </div>
+        <div class="int "><img
+                src="https://images.unsplash.com/photo-1791352616735-8f3d5c0aefdd?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3fHx8ZW58MHx8fHx8">
+            <div class="text aa">
+                <h3>Forest</h3>
+            </div>
+        </div>
+        <div class="int "><img
+                src="https://images.unsplash.com/photo-1790789655397-1bb011fa75e7?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxM3x8fGVufDB8fHx8fA%3D%3D">
+            <div class="text aa">
+                <h3>City</h3>
+            </div>
+        </div>
+        <div class="int "><img
+                src="https://images.unsplash.com/photo-1790700553443-1b00de9f47dc?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyOHx8fGVufDB8fHx8fA%3D%3D">
+            <div class="text aa">
+                <h3>Beach</h3>
+            </div>
+        </div>
+        <div class="int "><img
+                src="https://images.unsplash.com/photo-1791152933480-aa6e16d4786e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzN3x8fGVufDB8fHx8fA%3D%3D">
+            <div class="text aa">
+                <h3>Mountain</h3>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
