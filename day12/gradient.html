@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: black;
+        }
+        
+        
+        h1{
+            color: white;
+            text-align: center;
+        }
+        .main{
+            
+            height: 90vh;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            /* border: 1px solid blue; */
+            gap: 20px;
+            padding: 20px;
+            position: relative;
+        }
+        .box{
+            border: 1px solid white;
+            border-radius: 20px;
+            cursor: pointer;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box:hover{
+            transform: scale(1.05);
+            transition: 2s;
+        }
+        h3{
+            color:aliceblue;
+            font-size: 30px;
+        }
+
+        .one{
+            background: linear-gradient( red, rgb(4, 0, 255));
+        }
+        .two{
+            background: linear-gradient( to right, red,blue);
+        }
+        .three{
+            background: linear-gradient( to left, red,blue);
+        }
+        .four{
+            background: linear-gradient( to top right, red,blue);
+        }
+        .five{
+            background: linear-gradient( to bottom left, red,blue);
+        }
+        .six{
+            background: linear-gradient( 45deg, red,blue);
+        }
+        .seven{
+            background: linear-gradient( to right, red,blue,green,yellow);
+        }
+        .eight{
+            background: radial-gradient( red,blue);
+        }
+        .nine{
+            background: conic-gradient( red,blue,yellow,green);
+        }
+        .ten{
+            background: repeating-linear-gradient( red,blue,green,yellow);
+        }
+        .eleven{
+            background: repeating-conic-gradient( red 0deg 20deg,blue 20deg 40deg);
+        }
+        .twelve{
+            background: repeating-conic-gradient( red 0deg 20deg,blue 20deg 40deg,green 40deg 60deg,yellow 60deg 80deg);
+        }
+        .thirteen{
+             background: linear-gradient(
+                to bottom,
+                transparent,
+                black
+            );
+        }
+        .fourteen{
+            background: linear-gradient(
+                to bottom,
+                #834d9b,
+                #d06280
+            );
+        }
+        .fifteen{
+            background: repeating-linear-gradient(
+                90deg,
+                black 0px,
+                black 10px,
+                white 10px,
+                white 20px
+            );
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header"><h1>CSS GRADIENTS</h1></div>
+    <div class="main">
+        <div class="box one"><h3>Linear Gradient</h3></div>
+        <div class="box two"><h3>To Right</h3></div>
+        <div class="box three"><h3>To Left</h3></div>
+        <div class="box four"><h3>To Top Right</h3></div>
+        <div class="box five"><h3>To Bottom Left</h3></div>
+        <div class="box six"><h3>45 Degrees</h3></div>
+        <div class="box seven"><h3>Multiple Colors</h3></div>
+        <div class="box eight"><h3>Radial Gradient</h3></div>
+        <div class="box nine"><h3>Conic Gradient</h3></div>
+        <div class="box ten"><h3>Repeating Gradient</h3></div>
+        <div class="box eleven"><h3>Repeating Conic Gradient</h3></div>
+        <div class="box twelve"><h3>Custom Gradient</h3></div>
+        <div class="box thirteen"><h3>Transparent Gradient</h3></div>
+        <div class="box fourteen"><h3>Instagram Gradient</h3></div>
+        <div class="box fifteen"><h3 style="z-index: 999; color:blue">Jail</h3></div>
+    </div>
+</body>
+</html>
